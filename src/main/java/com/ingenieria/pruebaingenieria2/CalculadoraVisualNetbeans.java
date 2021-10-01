@@ -185,7 +185,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        
+        campoDeNumeros.setText(jButton3.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void campoDeNumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDeNumerosActionPerformed
@@ -193,11 +193,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_campoDeNumerosActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
+        campoDeNumeros.setText(jButton2.getText());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+            campoDeNumeros.setText(jButton1.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
