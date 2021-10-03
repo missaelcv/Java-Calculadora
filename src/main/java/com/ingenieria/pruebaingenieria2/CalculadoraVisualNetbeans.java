@@ -547,20 +547,20 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
        Double resultado = 0.0;
        String respuesta;
        
-       if (signo.equals("+")) {
-           resultado = Double.parseDouble (memoria1) + Double.parseDouble(memoria2);
+       if (signo.equals("-")) {
+           resultado = Double.parseDouble(memoria1)-Double.parseDouble(memoria2);
        }
        
-       if (signo.equals("-")) {
-           resultado = Double.parseDouble (memoria1) - Double.parseDouble(memoria2);
+       if (signo.equals("+")) {
+           resultado = Double.parseDouble(memoria1)+Double.parseDouble(memoria2);
        }
        
        if (signo.equals("*")) {
-           resultado = Double.parseDouble (memoria1) * Double.parseDouble(memoria2);
+           resultado = Double.parseDouble(memoria1)*Double.parseDouble(memoria2);
        }
        
        if (signo.equals("/")) {
-           resultado = Double.parseDouble (memoria1) / Double.parseDouble(memoria2);
+           resultado = Double.parseDouble(memoria1)/Double.parseDouble(memoria2);
        }
        
        respuesta = resultado.toString();
