@@ -91,6 +91,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         panelDeBotones.add(jButton21);
 
         jButton18.setText("C");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton18);
 
         jButton19.setText("Clear");
@@ -376,6 +381,10 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        campoDeNumeros.setText("");
+    }//GEN-LAST:event_jButton18ActionPerformed
 
    
     /**
