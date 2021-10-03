@@ -170,6 +170,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
 
         jButton4.setText("/");
         jButton4.setFocusable(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton4);
 
         jButton5.setText("4");
@@ -477,13 +482,22 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-         //Boton de Restar (-)
+         //Boton de Multiplicar (X)
         if (campoDeNumeros.getText().equals("")) {
            String memoria1 = campoDeNumeros.getText();
            String signo = "x";
            campoDeNumeros.setText("");
        }
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+         //Boton de Dividir (/)
+        if (campoDeNumeros.getText().equals("")) {
+           String memoria1 = campoDeNumeros.getText();
+           String signo = "/";
+           campoDeNumeros.setText("");
+       }
+    }//GEN-LAST:event_jButton4ActionPerformed
 
    
     /**
