@@ -355,9 +355,34 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        campoDeNumeros.setText(jButton14.getText());
+         //Boton Punto
+         String cadena; 
+         cadena = campoDeNumeros.getText();
+         
+         if(cadena.length() <= 0) {
+        campoDeNumeros.setText(jButton14.getText());}
+         
+         else {
+             if (!existepunto(campoDeNumeros.getText())) {
+                 campoDeNumeros.setText(campoDeNumeros.getText() + ".");
+             }
+         }
     }//GEN-LAST:event_jButton14ActionPerformed
 
+    public static boolean existepunto(String cadena){
+            boolean resultado;
+            resultado = false;
+            
+            for (int i = 0; i < cadena.length(); i++) {
+                     if(cadena.substring(i, i + 1).equals(".")){
+                         resultado = true;
+                         break;
+            }
+         }
+            return resultado;
+    }
+            
+            
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
