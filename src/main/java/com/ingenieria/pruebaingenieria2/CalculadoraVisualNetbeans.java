@@ -458,7 +458,12 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-      
+       //Boton de Restar (-)
+        if (campoDeNumeros.getText().equals("")) {
+           String memoria1 = campoDeNumeros.getText();
+           String signo = "-";
+           campoDeNumeros.setText("");
+       }
     }//GEN-LAST:event_jButton12ActionPerformed
 
    
