@@ -9,7 +9,9 @@ package com.ingenieria.pruebaingenieria2;
  * @author josearielpereyra
  */
 public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
-
+        String memoria1;
+        String signo;
+        String memoria2;
     /**
      * Creates new form CalculadoraVisual
      */
@@ -87,9 +89,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
 
         panelDeBotones.setLayout(new java.awt.GridLayout(0, 4));
 
+        jButton21.setForeground(new java.awt.Color(0, 0, 204));
         jButton21.setText("CE");
         panelDeBotones.add(jButton21);
 
+        jButton18.setForeground(new java.awt.Color(0, 0, 204));
         jButton18.setText("C");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,6 +102,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton18);
 
+        jButton19.setForeground(new java.awt.Color(0, 0, 204));
         jButton19.setText("Clear");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +111,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton19);
 
+        jButton20.setForeground(new java.awt.Color(0, 0, 204));
         jButton20.setText("x2");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,9 +120,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton20);
 
+        jButton17.setForeground(new java.awt.Color(0, 0, 204));
         jButton17.setText("%");
         panelDeBotones.add(jButton17);
 
+        jButton22.setForeground(new java.awt.Color(0, 0, 204));
         jButton22.setText("(");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,6 +133,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton22);
 
+        jButton23.setForeground(new java.awt.Color(0, 0, 204));
         jButton23.setText(")");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +142,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton23);
 
+        jButton24.setForeground(new java.awt.Color(0, 0, 204));
         jButton24.setText("+/-");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +151,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton24);
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 204));
         jButton1.setText("7");
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -150,6 +161,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton1);
 
+        jButton2.setForeground(new java.awt.Color(0, 0, 204));
         jButton2.setText("8");
         jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -159,6 +171,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton2);
 
+        jButton3.setForeground(new java.awt.Color(0, 0, 204));
         jButton3.setText("9");
         jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -168,6 +181,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton3);
 
+        jButton4.setForeground(new java.awt.Color(0, 0, 204));
         jButton4.setText("/");
         jButton4.setFocusable(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -177,6 +191,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton4);
 
+        jButton5.setForeground(new java.awt.Color(0, 0, 204));
         jButton5.setText("4");
         jButton5.setFocusable(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -186,6 +201,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton5);
 
+        jButton6.setForeground(new java.awt.Color(0, 0, 204));
         jButton6.setText("5");
         jButton6.setFocusable(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -195,6 +211,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton6);
 
+        jButton7.setForeground(new java.awt.Color(0, 0, 204));
         jButton7.setText("6");
         jButton7.setFocusable(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -204,6 +221,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton7);
 
+        jButton8.setForeground(new java.awt.Color(0, 0, 204));
         jButton8.setText("X");
         jButton8.setFocusable(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -213,6 +231,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton8);
 
+        jButton9.setForeground(new java.awt.Color(0, 0, 204));
         jButton9.setText("1");
         jButton9.setFocusable(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -222,6 +241,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton9);
 
+        jButton10.setForeground(new java.awt.Color(0, 0, 204));
         jButton10.setText("2");
         jButton10.setFocusable(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -231,6 +251,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton10);
 
+        jButton11.setForeground(new java.awt.Color(0, 0, 204));
         jButton11.setText("3");
         jButton11.setFocusable(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -240,6 +261,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton11);
 
+        jButton12.setForeground(new java.awt.Color(0, 0, 204));
         jButton12.setText("-");
         jButton12.setFocusable(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -249,6 +271,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton12);
 
+        jButton13.setForeground(new java.awt.Color(0, 0, 204));
         jButton13.setText("0");
         jButton13.setFocusable(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -258,6 +281,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton13);
 
+        jButton14.setForeground(new java.awt.Color(0, 0, 204));
         jButton14.setText(".");
         jButton14.setFocusable(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -267,10 +291,17 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         });
         panelDeBotones.add(jButton14);
 
+        jButton15.setForeground(new java.awt.Color(0, 0, 204));
         jButton15.setText("=");
         jButton15.setFocusable(false);
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton15);
 
+        jButton25.setForeground(new java.awt.Color(0, 0, 204));
         jButton25.setText("+");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -336,11 +367,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-       campoDeNumeros.setText(jButton7.getText());
+       campoDeNumeros.setText(campoDeNumeros.getText() + "6");
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        campoDeNumeros.setText(jButton3.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "9");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void campoDeNumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDeNumerosActionPerformed
@@ -348,31 +379,32 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_campoDeNumerosActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        campoDeNumeros.setText(jButton2.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "8");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            campoDeNumeros.setText(jButton1.getText());
+          campoDeNumeros.setText(campoDeNumeros.getText() + "7");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        campoDeNumeros.setText(jButton5.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "4");
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        campoDeNumeros.setText(jButton6.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "5");
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        campoDeNumeros.setText(jButton9.getText());
+       // campoDeNumeros.setText(jButton9.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "1");
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        campoDeNumeros.setText(jButton10.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "2");
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        campoDeNumeros.setText(jButton11.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "3");
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
@@ -484,8 +516,8 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
          //Boton de Multiplicar (X)
         if (campoDeNumeros.getText().equals("")) {
-           String memoria1 = campoDeNumeros.getText();
-           String signo = "x";
+           memoria1 = campoDeNumeros.getText();
+           signo = "*";
            campoDeNumeros.setText("");
        }
     }//GEN-LAST:event_jButton8ActionPerformed
@@ -493,13 +525,48 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
          //Boton de Dividir (/)
         if (campoDeNumeros.getText().equals("")) {
-           String memoria1 = campoDeNumeros.getText();
-           String signo = "/";
+           memoria1 = campoDeNumeros.getText();
+           signo = "/";
            campoDeNumeros.setText("");
        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
-   
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        String resultado;
+         memoria2 = campoDeNumeros.getText();
+         
+        
+        if(memoria2.equals("")) {
+            resultado = calculadora(memoria1, memoria2, signo);
+            campoDeNumeros.setText(resultado);
+        }
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+   public static String calculadora(String memoria1, String memoria2, String signo)
+   {
+       Double resultado = 0.0;
+       String respuesta;
+       
+       if (signo.equals("+")) {
+           resultado = Double.parseDouble (memoria1) + Double.parseDouble(memoria2);
+       }
+       
+       if (signo.equals("-")) {
+           resultado = Double.parseDouble (memoria1) - Double.parseDouble(memoria2);
+       }
+       
+       if (signo.equals("*")) {
+           resultado = Double.parseDouble (memoria1) * Double.parseDouble(memoria2);
+       }
+       
+       if (signo.equals("/")) {
+           resultado = Double.parseDouble (memoria1) / Double.parseDouble(memoria2);
+       }
+       
+       respuesta = resultado.toString();
+       return respuesta;
+       
+   }
     /**
      * @param args the command line arguments
      */
