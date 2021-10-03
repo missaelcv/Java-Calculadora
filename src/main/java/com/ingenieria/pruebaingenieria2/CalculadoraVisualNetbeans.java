@@ -107,6 +107,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         panelDeBotones.add(jButton19);
 
         jButton20.setText("x2");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton20);
 
         jButton17.setText("%");
@@ -129,6 +134,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
         panelDeBotones.add(jButton23);
 
         jButton24.setText("+/-");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton24);
 
         jButton1.setText("7");
@@ -222,6 +232,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
 
         jButton12.setText("-");
         jButton12.setFocusable(false);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton12);
 
         jButton13.setText("0");
@@ -417,6 +432,34 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         campoDeNumeros.setText("");
     }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+       //Boton x2 (x2)
+        String cadena;
+        Double numero;
+        cadena = campoDeNumeros.getText();
+        if (cadena.length()>0) {
+            numero=1/(Double.parseDouble(cadena));
+            campoDeNumeros.setText(numero.toString());
+        }
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+       //Boton Signo (+/-)
+        Double numero;
+        String cadena;
+        
+        cadena= campoDeNumeros.getText();
+        if(cadena.length()>0)
+        {
+            numero=(-1)*Double.parseDouble(cadena);
+            campoDeNumeros.setText(numero.toString());
+        }
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+      
+    }//GEN-LAST:event_jButton12ActionPerformed
 
    
     /**
