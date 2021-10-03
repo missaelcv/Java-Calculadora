@@ -418,7 +418,12 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
+         //Boton de Sumer (+)
+        if (campoDeNumeros.getText().equals("")) {
+           String memoria1 = campoDeNumeros.getText();
+           String signo = "+";
+           campoDeNumeros.setText("");
+       }
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
