@@ -201,6 +201,11 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
 
         jButton8.setText("X");
         jButton8.setFocusable(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         panelDeBotones.add(jButton8);
 
         jButton9.setText("1");
@@ -470,6 +475,15 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
            campoDeNumeros.setText("");
        }
     }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+         //Boton de Restar (-)
+        if (campoDeNumeros.getText().equals("")) {
+           String memoria1 = campoDeNumeros.getText();
+           String signo = "x";
+           campoDeNumeros.setText("");
+       }
+    }//GEN-LAST:event_jButton8ActionPerformed
 
    
     /**
