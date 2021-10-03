@@ -355,7 +355,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-         //Boton Punto
+         //Boton Punto(.)
          String cadena; 
          cadena = campoDeNumeros.getText();
          
@@ -384,7 +384,14 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
             
             
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
+        //Boton de Borra (CLEAR)
+        String cadena;
+        cadena = campoDeNumeros.getText();
+        
+        if(cadena.length() >0) {
+            cadena = cadena.substring( 0, cadena.length() -1);
+            campoDeNumeros.setText(cadena);
+        }
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
