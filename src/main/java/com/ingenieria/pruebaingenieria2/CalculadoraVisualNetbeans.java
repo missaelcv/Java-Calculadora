@@ -408,7 +408,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        campoDeNumeros.setText(jButton13.getText());
+        campoDeNumeros.setText(campoDeNumeros.getText() + "0");
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
@@ -431,7 +431,7 @@ public class CalculadoraVisualNetbeans extends javax.swing.JFrame {
             resultado = false;
             
             for (int i = 0; i < cadena.length(); i++) {
-                     if(cadena.substring(i, i + 1).equals(".")){
+                     if(cadena.substring(i, i + 1).equals("."+".")){
                          resultado = true;
                          break;
             }
